@@ -1,7 +1,17 @@
 @(message: String)
 
-@main("Welcome to Play 2.1") {
-    
-    @play20.welcome(message)
-    
+@main("Play + AngularJS") {
+
+    <h1>Scala Template</h1>
+
+<p>With some angular functionality (ng-repeat)</p>
+    <div ng-app="App">
+      <div ng-controller="MainCtrl">
+      	<ul>
+      	 <li ng-repeat="item in data">{{item.name}}</li>
+      	</ul>
+      </div>
+
+    </div>
+
 }
